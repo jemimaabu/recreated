@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recreated - VSCO</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 14px;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    nav {
+      height: 10.5vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      transition: color .3s;
+      padding: 0 1em;
+    }
+
+    nav a:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .app-button {
+      background-color: black;
+      color: white;
+      padding: 0.75em 1em;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid black;
+      border-radius: 2px;
+      transition: .3s;
+    }
+
+    nav .app-button {
+      margin-left: 1em;
+    }
+
+    .app-button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      height: 89.5vh;
+      position: relative;
+    }
+
+    .header-text {
+      position: absolute;
+      font-size: 32px;
+      color: white;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 2em;
+      height: fit-content;
+    }
+
+    .header-text .app-button {
+      margin-top: 1.5em;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    header .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .slide#one {
+      background-color: #E9B806;
+      animation: flash-one 6s infinite;
+    }
+
+    .slide#two {
+      background-color: #D2511A;
+      animation: flash-two 6s infinite;
+    } 
+
+    .slide#three {
+      background-color: #35977E;
+      animation: flash-three 6s infinite;
+    }   
+
+    @keyframes flash-one {
+      0% {visibility: visible;}
+      30% {visibility: visible}
+      31% {visibility: hidden}
+    }
+
+    @keyframes flash-two {
+      0% {visibility: hidden;}
+      30% {visibility: hidden}
+      31% {visibility: visible;}
+      60% {visibility: visible;}
+      61% {visibility: hidden;}
+    }
+
+    @keyframes flash-three {
+      0% {visibility: hidden;}
+      60% {visibility: hidden}
+      61% {visibility: visible;}
+      100% {visibility: visible}
+      
+    }
+  </style>
+</head>
+
+
+<body>
+  <main>
+    <nav>
+      <div class="search-container">
+        <a href="#">Search</a>
+      </div>
+      <div class="links-container">
+        <a href="https://www.jemimaabu.com"><b>JMMA</b></a>
+        <a href="#">Feed</a>
+        <a href="#">Sign in</a>
+        <a href="" class="app-button">Nope, no App</a>
+      </div>
+    </nav>
+    <header>
+      <div class="slide" id="one"></div>
+      <div class="slide" id="two"></div>
+      <div class="slide" id="three"></div>
+      <div class="header-text">
+        Recreate it anyway. <br>
+        Recreated by JMMA. <br>
+        <a href="https://www.jemimaabu.com" class="app-button">Visit my site</a>
+      </div>
+        
+    </header>
+  </main>
+</body>
+</html>
