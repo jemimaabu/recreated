@@ -101,9 +101,7 @@
     }  
 
     .nav-arrow {
-      padding: 1em;
-      font-size: 32px;
-      color: white;
+      padding: 2em;
       width: fit-content;
       height: fit-content;
       position: absolute;
@@ -111,6 +109,14 @@
       left: 0;
       right: 0;
       margin: auto;
+    }
+
+    .nav-arrow a {
+      font-size: 32px;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      animation: upndown 1s ease-out infinite;
     } 
 
     @keyframes flash-one {
@@ -132,7 +138,12 @@
       60% {visibility: hidden}
       61% {visibility: visible;}
       100% {visibility: visible}
-      
+    }
+
+    @keyframes upndown {
+      from {transform: translateY(0);}
+      50% {transform: translateY(16px);}
+      to {transform: translateY(0);}
     }
   </style>
 </head>
@@ -161,7 +172,7 @@
         <a href="https://www.jemimaabu.com" class="app-button">Visit my site</a>
       </div>
       <div class="nav-arrow">
-        &#8595;
+        <a href="#next">&#8595</a>;
       </div>
     </header>
   </main>
