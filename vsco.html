@@ -9,12 +9,13 @@
   <style>
     body {
       font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      font-size: 14px;
       margin: 0;
+      color: white;
     }
 
     * {
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     nav {
@@ -23,6 +24,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 2em;
+      font-size: 14px;
     }
 
     nav a {
@@ -61,7 +63,7 @@
       position: relative;
     }
 
-    .header-text {
+    .header-text, .section-text {
       position: absolute;
       font-size: 32px;
       color: white;
@@ -72,7 +74,8 @@
       height: fit-content;
     }
 
-    .header-text .app-button {
+    .header-text .app-button,
+    .section-text .app-button {
       margin-top: 1.5em;
       font-size: 16px;
       display: inline-block;
@@ -118,6 +121,49 @@
       display: inline-block;
       animation: upndown 1s ease-out infinite;
     } 
+    
+    section {
+      height: 100vh;
+      font-size: 16px;
+    }
+
+    section#next {
+      background-color: #C1C1B5;
+    }
+
+    section#join {
+      height: 50vh;
+      background-color: #000;
+      padding: 2em;
+      font-size: 18px;
+    }
+
+    #join h2 {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 120px;
+    }
+
+    #join .community-container {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .community {
+      max-width: 280px;
+    }
+
+    .community .title {
+      font-weight: 600;
+    }
+
+    nav,
+    header,
+    section {
+      position: sticky;
+      top: 0;
+    }
 
     @keyframes flash-one {
       0% {visibility: visible;}
@@ -172,9 +218,34 @@
         <a href="https://www.jemimaabu.com" class="app-button">Visit my site</a>
       </div>
       <div class="nav-arrow">
-        <a href="#next">&#8595</a>;
+        <a href="#next">&#8595</a>
       </div>
     </header>
+    <section id="next">
+      <div class="section-text">
+        Take your design to <br>
+        the next level. <br>
+        <a href="https://www.jemimaabu.com" class="app-button">Visit my site</a>
+      </div>
+    </section>
+    <section id="join">
+      <h2>Join a community for developers, by developers</h2>
+      <div class="community-container">
+        <div class="community">
+          <div class="title">Create</div>
+          <p class="body">Use powerful frameworks and developer tools to make beautiful websites and applications.</p>
+        </div>
+        <div class="community">
+          <div class="title">Discover</div>
+          <p class="body">Get inspired by user stories and tech tutorials featured in Medium.
+          </p>
+        </div>
+        <div class="community">
+          <div class="title">Connect</div>
+          <p class="body">Follow other developers and share your projects with the tech community.</p>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
