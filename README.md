@@ -1,3 +1,3 @@
 # recreated
 
-A collection of website designs that I recreated
+A collection of websites that I recreated from existing websites.
