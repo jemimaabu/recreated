@@ -46,14 +46,21 @@
       text-decoration: none;
       border: 1px solid black;
       border-radius: 2px;
-      transition: .3s;
+      display: inline-block;
+    }
+
+   .blue.app-button {
+      margin-top: 0;
+      background-color: #0000FF;
+      border: none;
     }
 
     nav .app-button {
       margin-left: 1em;
+      transition: .3s;
     }
 
-    .app-button:hover {
+    nav .app-button:hover {
       background-color: white;
       color: black;
     }
@@ -182,20 +189,67 @@
       margin: 0 auto 16px;
     }
 
-    #member .app-button {
-      margin-top: 0;
-      background-color: #0000FF;
-      border: none;
-    }
-
-    #member .app-button:hover {
-      color: inherit;
-    }
-
     section#last {
       background-color: #fff;
-      height: 100vh;
+      min-height: 100vh;
       position: relative;
+      display: flex;
+      color: black;
+      padding: 60px 180px;
+      justify-content: space-between;
+    }
+
+    #last .left, #last .right {
+      width: 50%;
+      padding-right: 32px;
+    }
+
+    #last h3 {
+      font-size: 24px;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    #last h4 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+
+    #last .app-button {
+      margin-bottom: 32px;
+    }
+
+    #last ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    #last li {
+      list-style-type: none;
+      font-size: 16px;
+      margin-bottom: 32px;
+      padding-left: 32px;
+      position: relative;
+    }
+
+    #last li:before {
+      content: "\02192";
+      font-size: 24px;
+      position: absolute;
+      left: 0;
+      top: -6px;
+    }
+
+    #last li h5 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 3px
+    }
+
+    #last li p {
+      margin: 0;
     }
 
     footer {
@@ -219,7 +273,7 @@
     }
 
     .footer-link .title {
-      font-weight: 7footer00;
+      font-weight: 700;
     }
 
     .footer-link li {
@@ -325,15 +379,59 @@
       <div class="section-text">
         <h2>JOIN THE COOL CROWD</h2>
         <p>Unlock your technical potential by building something cool</p>
-        <a href="https://www.jemimaabu.com" class="app-button">And check out my site</a>
+        <a href="https://www.jemimaabu.com" class="blue app-button">And check out my site</a>
       </div>
     </section>
     <section id="last">
       <div class="left">
-
+        <h3>LOREM</h3>
+        <h4>Ipsum</h4>
+        <a href="#" class="app-button">Lorem Ipsum</a>
+        <ul>
+          <li>
+            <h5>First bullet point</h5>
+            <p>It would probably be easier to use the content from the VSCO site</p>
+          </li>
+          <li>
+            <h5>Second bullet point</h5>
+            <p>But there's the whole copyright thing so probably not a good idea</p>
+          </li>
+          <li>
+            <h5>Third bullet point</h5>
+            <p>Even though, to be totally honest, I'm not sure how it works.</p>
+          </li>
+        </ul>
       </div>
       <div class="right">
-        
+          <h3>LOREM Fancy</h3>
+          <h4>Ipsum Premium</h4>
+          <a href="#" class="blue app-button">Lorem Ipsum but for a fee</a>
+          <ul>
+            <li>
+              <h5>First bullet point</h5>
+              <p>Okay so I know that people usually put the whole &copy thing</p>
+            </li>
+            <li>
+              <h5>Second bullet point</h5>
+              <p>in the footer part of the site and all. But how does it <i>actually</i> work?</p>
+            </li>
+            <li>
+              <h5>Third bullet point</h5>
+              <p>And what exactly does it extend to? The content? The design?</p>
+            </li>
+            <li>
+              <h5>Fourth bullet point</h5>
+              <p>Alright, according to <a href="https://www.legalzoom.com/articles/how-to-copyright-a-website" target="_blank" rel="noreferrer noopener">this website</a>, <q>Copyright protects original works of authorship, including the text,</q></p>
+            </li>
+            <li>
+              <h5>Fifth bullet point</h5>
+              <p><q>graphics, photographs, sound recordings and audiovisual elements of websites and their underlying computer programs</q></p>
+            </li>
+            <li>
+              <h5>Sixth bullet point</h5>
+              <p>So I guess that's that on that. And now we know.</p>
+            </li>
+          </ul>
       </div>
     </section>
     <footer>
