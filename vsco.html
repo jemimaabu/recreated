@@ -235,6 +235,25 @@
       height: 100vh;
     }
 
+    #member .image.one {
+      position: absolute;
+      margin: auto;
+      background-color: #93613E;
+      width: 500px;
+      height: 92.5vh;
+      bottom: 0;
+      right: 11.5%;
+    }
+
+    #member .circle-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(#eee 20%, transparent 0), radial-gradient(#eee 20%, transparent 0);
+      background-size: 10px 10px;
+      background-position: 0 0, 15px 15px;
+    }
+
     #member .section-text {
       right: 0;
       left: 0;
@@ -456,6 +475,8 @@
       </div>
     </section>
     <section id="member">
+      <div class="image one"></div>
+      <!-- <div class="circle-overlay"></div> -->
       <div class="section-text">
         <h2>JOIN THE COOL CROWD</h2>
         <p>Unlock your technical potential by building something cool</p>
