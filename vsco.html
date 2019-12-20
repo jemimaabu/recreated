@@ -13,6 +13,10 @@
       color: white;
     }
 
+    :root {
+      --padding: 60px
+    }
+
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
@@ -376,6 +380,21 @@
     section {
       position: sticky;
       top: 0;
+    }
+
+    @media screen and (max-width: 850px) {
+      :root {
+        padding: 30px
+      }
+
+      section#last {
+        flex-direction: column
+      }
+
+      #last .left, #last .right {
+        width: 100%;
+        padding-right: 0;
+      }
     }
 
     @keyframes flash-one {
