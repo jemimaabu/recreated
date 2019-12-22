@@ -1,5 +1,5 @@
 # recreated
 
-A collection of websites that I recreated from existing websites.
+A collection of site designs that I recreated from websites I found online.
 
-- [VSCO](https://jemimaabu.github.io/recreated/vsco.html)
+- [VSCO](https://jemimaabu.github.io/recreated/vsco.html) ([original](https://vsco.co/))
