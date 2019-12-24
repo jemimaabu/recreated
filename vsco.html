@@ -69,6 +69,7 @@
       float: right;
       font-size: 20px;
       padding: 0;
+      cursor: pointer;
     }
 
     nav.mobile #menu {
@@ -82,6 +83,7 @@
       width: 85%;
       max-width: 22.5rem;
       z-index: 2;
+      padding: 20px 2em 40px 40px;
     }
 
     nav.mobile #menu.active {
@@ -91,7 +93,6 @@
     #menu .close {
       height: 60px;
       text-align: right;
-      padding: 20px 2em;
     }
 
     .close button {
@@ -102,6 +103,38 @@
       padding: 0;
       font-size: 24px;
       line-height: 0;
+      cursor: pointer;
+    }
+
+    #menu .links {
+      padding: 0;
+      margin: 0;
+    }
+
+    #menu .links li {
+      list-style: none;
+      padding: 12px 0;
+      font-size: 18px;
+    }
+
+    #menu .footer-links {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    #menu .footer-links ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    #menu .footer-links ul:first-of-type {
+      margin-right: 75px;
+    }
+
+    #menu .footer-links li {
+      list-style: none;
+      font-size: 12px;
+      padding: 12px 0;
     }
 
     .app-button {
@@ -601,6 +634,26 @@
         <div id="menu">
           <div class="close">
             <button onclick="toggleMenu()">&times;</button>
+          </div>
+          <ul class="links">
+            <li><b>JMMA</b></li>
+            <li>Feed</li>
+            <li>Sign in</li>
+          </ul>
+          <div class="footer-links">
+            <ul class="lorem">
+              <li>lorem</li>
+              <li>lorem</li>
+              <li>lorem</li>
+              <li>lorem</li>
+              <li>lorem</li>
+            </ul>
+            <ul class="ipsum">
+              <li>ipsum</li>
+              <li>ipsum</li>
+              <li>ipsum</li>
+              <li>ipsum</li>
+            </ul>
           </div>
         </div>
       </div>
