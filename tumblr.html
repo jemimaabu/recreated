@@ -22,7 +22,7 @@
 
     body {
       margin: 0;
-      background-color: #123;
+      background-color: #00142B;
       color: white;
     }
 
@@ -39,16 +39,32 @@
       margin-right: 0.6rem;
     }
 
+    nav .logo:hover {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-size: 1200%;
+      background-image: linear-gradient(90deg,#D95E40, #F3AA31, #A7CD61, #53A6BC, #A77DC2, #D95E40);
+      cursor: pointer;
+      animation: changeColor .5s ease infinite;
+    }
+
     nav .search input {
       height: 34px;
       width: 480px;
       border-radius: 3px;
-      padding: 1em;
-      background: hsla(0,0%,100%,.25);
-      color: hsla(0,0%,100%,.65);
+      padding: 0 1em;
+      background: rgba(255, 255, 255, 0.25);
+      color: rgba(255, 255, 255, 0.65);
       font-weight: 400;
       font-size: 15px;
       border: 0;
+    }
+
+    nav .search input::placeholder {
+      font-weight: 400;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.65);
     }
 
     h1 {
@@ -56,7 +72,14 @@
       text-transform: lowercase;
     }
 
-
+    @keyframes changeColor {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
   </style>
 </head>
 <body>
