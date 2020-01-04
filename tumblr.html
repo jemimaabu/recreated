@@ -67,6 +67,67 @@
       color: rgba(255, 255, 255, 0.65);
     }
 
+    header {
+      height: 85vh;
+      position: relative;
+    }
+
+    .header-text {
+      height: fit-content;
+      width: fit-content;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+
+    .header-title {
+      font-size: 65px;
+      margin: 0;
+      line-height: 0.8;
+    }
+
+    .header-subtitle {
+      margin: 10px 0 30px;
+      line-height: 22px;
+    }
+
+    .header-subtitle p {
+      margin: 0;
+    }
+
+    .header-text .button {
+      width: 300px;
+      height: 45px;
+      display: block;
+      border: 0;
+      margin: 12px 0 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 32px;
+      border-radius: 2px;
+    }
+
+    .header-text .button.blue {
+      background-color: #00B8FF;
+      color: #fff;
+    }
+
+    .header-text .button.white {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .header-text p.trending {
+      font-weight: bold;
+      margin-top: 17px;
+    }
+
     h1 {
       font-family: "Bookman Old Style", Arial, Helvetica, sans-serif;
       text-transform: lowercase;
@@ -90,6 +151,16 @@
     </div>
   </nav>
   <header>
+    <div class="header-text">
+      <h1 class="header-title">numblr</h1>
+      <div class="header-subtitle">
+        <p>Come for funny posts and art.</p>
+        <p>Stay for arguing with strangers.</p>
+      </div>
+      <button class="blue button">Get Started</button>
+      <button class="white button">Log In</button>
+      <p class="trending">Here's what's trending</p>
+    </div>
   </header>
   
 </body>
