@@ -37,16 +37,11 @@
       margin: 0;
       line-height: 0.5;
       margin-right: 0.6rem;
+      cursor: pointer;
     }
 
     nav .logo:hover {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-size: 1200%;
-      background-image: linear-gradient(90deg,#D95E40, #F3AA31, #A7CD61, #53A6BC, #A77DC2, #D95E40);
-      cursor: pointer;
-      animation: changeColor .5s ease infinite;
+      animation: changeColor .75s linear infinite;
     }
 
     nav .search input {
@@ -135,10 +130,19 @@
 
     @keyframes changeColor {
       0% {
-        background-position: 0% 50%;
+        color: #D95E40;
+      }
+      25% {
+        color: #F3AA31;
+      }
+      50% {
+        color: #A7CD61;
+      }
+      75% {
+        color: #53A6BC;
       }
       100% {
-        background-position: 100% 50%;
+        color: #A77DC2;
       }
     }
   </style>
