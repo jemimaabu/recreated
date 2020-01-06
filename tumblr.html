@@ -126,6 +126,19 @@
       margin-top: 17px;
     }
 
+    .header-links {
+      position: absolute;
+      bottom: 45px;
+      display: flex;
+      justify-content: space-between;
+      padding: 13px 20px ;
+      width: 100%;
+    }
+
+    .header-links .links span + span {
+      margin-left: 12px;
+    }
+
     .header-footer {
       background: #00cf35;
       box-shadow: inset 0 3px 0 rgba(0,0,0,.1);
@@ -184,6 +197,17 @@
       <button class="blue button">Get Started</button>
       <button class="white button">Log In</button>
       <p class="trending">Here's what's trending</p>
+    </div>
+    <div class="header-links">
+      <div class="links">
+        <span>Terms</span>
+        <span>Privacy</span>
+        <span>Jobs</span>
+        <span>Support</span>
+      </div>
+      <div class="posted">
+        <span>Posted by</span>
+      </div>
     </div>
     <div class="header-footer">
       What is Numblr?
