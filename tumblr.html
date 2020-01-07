@@ -32,7 +32,7 @@
     }
 
     nav {
-      padding: 0.5em 1em;
+      padding: 10px 22px;
       display: flex;
     }
 
@@ -40,7 +40,7 @@
       font-size: 50px;
       margin: 0;
       line-height: 0.5;
-      margin-right: 0.6rem;
+      margin-right: 18px;
       cursor: pointer; 
     }
 
@@ -160,6 +160,31 @@
       z-index: 2;
     }
 
+    .section-nav {
+      left: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .section-nav .dot {
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 3px #fff;
+      cursor: pointer;
+      height: 16px;
+      margin-bottom: 10px;
+      opacity: .4;
+      position: relative;
+      width: 16px;
+      box-sizing: border-box;
+    } 
+
+    .section-nav .dot.active {
+      background: #fff;
+      box-shadow: none;
+      opacity: 1;
+    }
+
     h1 {
       font-family: "Bookman Old Style", Arial, Helvetica, sans-serif;
       text-transform: lowercase;
@@ -217,6 +242,13 @@
       What is Numblr?
     </div>
   </header>
-  
+  <div class="section-nav">
+    <div class="dot active" title="Sign up"></div>  
+    <div class="dot" title="So easy to use that it’s hard to explain."></div>  
+    <div class="dot" title="Tumblr is blogs."></div>  
+    <div class="dot" title="You already know how this works."></div>  
+    <div class="dot" title="Seriously, put anything you want here."></div>  
+    <div class="dot" title="Okay, it’s not actually hard to explain."></div>
+  </div>
 </body>
 </html>
