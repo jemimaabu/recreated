@@ -69,6 +69,7 @@
     header {
       height: 100vh;
       position: relative;
+      overflow: hidden;
     }
 
     .header-text {
@@ -81,6 +82,7 @@
       left: 0;
       right: 0;
       text-align: center;
+      animation: fadeUp .3s ease-out .7s backwards;
     }
 
     .header-title {
@@ -133,6 +135,8 @@
       justify-content: space-between;
       padding: 13px 20px ;
       width: 100%;
+      font-weight: normal;
+      font-size: 14px;
     }
 
     .header-links .links span {
@@ -154,10 +158,11 @@
       left: 0;
       line-height: 45px;
       position: absolute;
-      bottom: 0;
+      bottom: -45px;
       text-align: center;
       width: 100%;
       z-index: 2;
+      animation: bottom .3s ease-out 1.7s forwards;
     }
 
     .section-nav {
@@ -165,6 +170,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      animation: appear .3s ease-out .4s backwards;
     }
 
     .section-nav .dot {
@@ -207,6 +213,27 @@
         color: #A77DC2;
       }
     }
+
+    @keyframes fadeUp {
+      from {
+          opacity: 0;
+          transform: translateY(25px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+    }
+
+    @keyframes bottom {
+      from {bottom: -45px;}
+      to {bottom: 0;}
+    }
+
+    @keyframes appear {
+      from{opacity: 0;}
+      to{opacity:1}
+    }
   </style>
 </head>
 <body>
@@ -227,18 +254,19 @@
       <button class="white button">Log In</button>
       <p class="trending">Here's what's trending</p>
     </div>
-    <div class="header-links">
-      <div class="links">
-        <span>Terms</span>
-        <span>Privacy</span>
-        <span>Jobs</span>
-        <span>Support</span>
-      </div>
-      <div class="posted">
-        <span>Posted by</span>
-      </div>
-    </div>
+    
     <div class="header-footer">
+      <div class="header-links">
+        <div class="links">
+          <span>Terms</span>
+          <span>Privacy</span>
+          <span>Jobs</span>
+          <span>Support</span>
+        </div>
+        <div class="posted">
+          <span>Posted by</span>
+        </div>
+      </div>
       What is Numblr?
     </div>
   </header>
